@@ -1,5 +1,5 @@
 This is a simple reproducer to the class loading issue running with the openjdkorb on the JDK9
-========
+=======
 
 Compile
 -------
@@ -19,9 +19,9 @@ The result is
 ```
 Run with the OpenJDK ORB
 ------
-
+```
         /path/to/jdk-9/java --add-modules=java.corba --patch-module java.corba=/path/to/openjdk-orb.jar OrbTest
-        
+```
 The result is
 ```
 Nov 22, 2017 9:58:53 AM com.sun.corba.se.spi.orb.OperationFactory$ClassAction operate
@@ -50,5 +50,3 @@ Caused by: java.lang.ClassNotFoundException: InterpositionORBInitializerImpl
 
 orb init ok
 ```
-
-
